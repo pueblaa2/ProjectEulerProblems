@@ -1,0 +1,69 @@
+Mauro Puebla-Alvarez
+Project Euler
+
+Problem #1
+sum = 0
+
+for i in range (1,1000):
+
+    if i % 3 == 0 or i%5 == 0:
+
+        sum += i
+
+print (sum)
+
+233168
+
+Problem #2
+a = 1
+
+b = 2
+
+solution = 0
+
+
+while b <= 4000000:
+
+    if b % 2 ==0:
+
+        solution += b
+
+    a, b = b, a+b
+
+print (solution)
+4613732
+ 
+Problem # 3
+n = 600851475143
+i = 2
+
+while i * i < n:
+
+    while n % i == 0:
+
+        n = n/i
+
+    i = i + 1
+
+print(n)
+6857
+
+Problem # 6
+num = 100
+
+sumsq = num*(num + 1)/2
+
+sqsum = num*(num + 1) * (2*num+1)/6
+
+print((sumsq*sumsq) - sqsum)
+25164150
+
+Problem # 16
+sum = 0
+
+for x in str(2**1000):
+
+    sum = (sum + int(x))
+
+print (sum)
+1366
